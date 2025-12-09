@@ -64,11 +64,6 @@ Por eso se convirtieron a **factor**, lo cual:
 - ✔ Facilita el uso de `ggplot2` para graficar variables categóricas  
 - ✔ Ayuda a identificar el número de niveles (categorías únicas)
 
-Ejemplo de conversión realizada en el análisis:
-
-```r
-char_cols <- sapply(df, is.character)
-df[char_cols] <- lapply(df[char_cols], as.factor)
 
 ---
 
