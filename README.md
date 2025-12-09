@@ -1,6 +1,6 @@
-# 📊 Student Mental Health Survey – EDA y Visualización
+#  Student Mental Health Survey – EDA y Visualización
 
-## 🧠 1. Descripción del Dataset
+##  1. Descripción del Dataset
 
 El dataset **Student Mental Health Survey (2024)** recopila información sobre la salud mental de estudiantes universitarios, incluyendo:
 
@@ -14,26 +14,26 @@ El objetivo principal es identificar **qué factores influyen en la salud mental
 
 ---
 
-## 🧪 2. ¿Qué se realizó en este proyecto?
+##  2. ¿Qué se realizó en este proyecto?
 
 Este proyecto incluye un **análisis exploratorio de datos (EDA)** completo usando **R dentro de Google Colab**, integrando librerías como `ggplot2`, `patchwork` y `dplyr`.
 
 Las tareas realizadas fueron:
 
-### ✔️ Importación del dataset desde Kaggle  
+###  Importación del dataset desde Kaggle  
 Usando Kaggle API dentro de Colab.
 
-### ✔️ Limpieza y preparación  
+###  Limpieza y preparación  
 - Conversión de variables categóricas a *factor*.  
 - Revisión de valores faltantes y duplicados.  
 - Exploración de rangos numéricos y valores únicos.
 
-### ✔️ Análisis Exploratorio (EDA)  
+###  Análisis Exploratorio (EDA)  
 - Histogramas de ansiedad, depresión y edad.  
 - Tablas de frecuencia para entender categorías.  
 - Creación de un dataset reducido con las variables más relevantes.
 
-### ✔️ Feature Engineering  
+###  Feature Engineering  
 Se crearon nuevas variables útiles para análisis:
 
 - `sleep_group` → Agrupa horas de sueño (very_low_sleep, low_sleep, normal_sleep)  
@@ -41,23 +41,23 @@ Se crearon nuevas variables útiles para análisis:
 - `high_depression` → depresión alta (4–5) frente a baja/media  
 - Eliminación de columnas irrelevantes para salud mental  
 
-### ✔️ Visualizaciones  
+###  Visualizaciones  
 Se generaron **5 gráficos representativos** con análisis detallado (ver sección 4).
 
 ---
 
-## 📁 3. Estructura del Proyecto
+##  3. Estructura del Proyecto
 
 El repositorio debe quedar estructurado de esta manera:
 
 ```
 📦 student-mental-health-eda
 │
-├── 📄 README.md
-├── 📄 Dataset.ipynb                 # Notebook con análisis EDA
-├── 📄 MentalHealthSurvey.csv        # Dataset original usado en Kaggle
+├──  README.md
+├──  Dataset.ipynb                 # Notebook con análisis EDA
+├──  MentalHealthSurvey.csv        # Dataset original usado en Kaggle
 │
-├── 📁 images                        # Carpeta con gráficas generadas
+├──  images                        # Carpeta con gráficas generadas
 │     ├── donut_presion_academica.png
 │     ├── boxplot_depresion_carga.png
 │     ├── heatmap_presion_ansiedad.png
@@ -65,7 +65,7 @@ El repositorio debe quedar estructurado de esta manera:
 │     ├── histogramas_emocionales.png  
 ```
 
-### 🔑 Importante:
+### Importante:
 Debes subir **kaggle.json** dentro de la carpeta `sample_data/` en Google Colab para poder descargar datasets desde Kaggle.  
 
 Esto se hace desde:
@@ -76,7 +76,7 @@ Files → sample_data → Upload → kaggle.json
 
 ---
 
-## 🚀 4. Cómo ejecutar el proyecto desde Google Colab
+##  4. Cómo ejecutar el proyecto desde Google Colab
 
 1. Abrir el notebook `Dataset.ipynb` en Colab.
 2. Subir el archivo `kaggle.json` dentro de **sample_data**.
@@ -100,9 +100,9 @@ Y las celdas R con:
 
 ---
 
-## 📊 5. Gráficas más representativas (con análisis)
+##  5. Gráficas más representativas (con análisis)
 
-### **1️⃣ Gráfico DONUT – Distribución de la presión académica**
+### **1️ Gráfico DONUT – Distribución de la presión académica**
 
 ![Gráfico DONUT – Presión Académica](images/donut_presion_academica.png)
 
@@ -112,7 +112,7 @@ Esto evidencia que la mayoría de los estudiantes experimentan **cargas académi
 
 ---
 
-### **2️⃣ Boxplot – Depresión según carga académica**
+### **2️ Boxplot – Depresión según carga académica**
 
 ![Boxplot Depresión vs Carga Académica](images/boxplot_depresion_carga.png)
 
@@ -122,7 +122,7 @@ La variabilidad es baja cuando la carga es mínima, pero se vuelve amplia cuando
 
 ---
 
-### **3️⃣ Mapa de calor – Presión académica vs ansiedad**
+### **3️  Mapa de calor – Presión académica vs ansiedad**
 
 ![Mapa de calor](images/heatmap_presion_ansiedad.png)
 
@@ -131,7 +131,7 @@ Las combinaciones de presión **4–5** con ansiedad **4–5** son las más frec
 Esto indica una **correlación directa entre presión académica y ansiedad**.
 
 ---
-
+### **4 Grafico de Barras – Discriminación**
 
 **Archivo:** `barras_discriminacion.png`
 
@@ -144,7 +144,7 @@ Este tipo de experiencias están asociadas con mayor ansiedad y menor satisfacci
 
 ---
 
-### **5️⃣ Histogramas de edad, ansiedad y depresión**
+### **5 Histogramas de edad, ansiedad y depresión**
 
 **Archivo:** `histogramas.png`
 ![Histogramas](images/histogramas_emocionales.png)
@@ -157,7 +157,7 @@ Este tipo de experiencias están asociadas con mayor ansiedad y menor satisfacci
 
 ---
 
-## 🎯 6. Conclusiones principales
+##  6. Conclusiones principales
 
 - La presión y la carga académica muestran **relación directa** con ansiedad y depresión.  
 - El sueño insuficiente y la falta de deporte agravan los factores de riesgo emocional.  
@@ -168,7 +168,7 @@ Este análisis permite identificar patrones clave para intervenciones y estrateg
 
 ---
 
-## 📌 7. Autor
+##  7. Autor
 
 Proyecto desarrollado por **Mariluz García Vera**  
 EDA realizado con **R + Python (rpy2)** en Google Colab.
