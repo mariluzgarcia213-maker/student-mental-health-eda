@@ -51,17 +51,15 @@ Se generaron **5 gráficos representativos** con análisis detallado (ver secci�
 El repositorio debe quedar estructurado de esta manera:
 
 ```
-📂 student-mental-health-eda/
-├── Dataset.ipynb               ← Notebook donde se ejecuta todo el análisis
-├── README.md                   ← Documentación del proyecto
-├── 📂 images/                  ← Carpeta para guardar las gráficas
-│     ├── donut_presion.png
-│     ├── boxplot_depresion.png
-│     ├── heatmap_presion_ansiedad.png
-│     ├── barras_discriminacion.png
-│     └── histogramas.png
-└── 📂 sample_data/
-      └── kaggle.json          ← Archivo necesario para autenticación de Kaggle API
+📁student-mental-health-eda/
+├── Dataset.ipynb           # Notebook con todo el EDA, FEV y visualizaciones en R/Colab
+├── README.md               # Descripción del dataset, análisis y explicación del proyecto
+└── images/                 # Carpeta con las figuras exportadas desde el notebook
+    ├── donut_presion_academica.png
+    ├── boxplot_depresion_carga.png
+    ├── heatmap_presion_ansiedad.png
+    ├── barras_discriminacion_campus.png
+    └── histogramas_emocionales.png     
 ```
 
 ### 🔑 Importante:
@@ -131,11 +129,11 @@ Esto indica una **correlación directa entre presión académica y ansiedad**.
 
 ---
 
-![Discriminación](images/barras_discriminacion.png)
 
 **Archivo:** `barras_discriminacion.png`
 
-![Histogramas](images/histogramas_emocionales.png)
+![Discriminación](images/barras_discriminacion.png)
+
 
 **Análisis:**  
 Aunque la mayoría reporta **no** haber sufrido discriminación, existe un grupo significativo que sí lo ha experimentado.  
@@ -146,6 +144,8 @@ Este tipo de experiencias están asociadas con mayor ansiedad y menor satisfacci
 ### **5️⃣ Histogramas de edad, ansiedad y depresión**
 
 **Archivo:** `histogramas.png`
+![Histogramas](images/histogramas_emocionales.png)
+
 
 **Análisis:**  
 - La mayoría de los estudiantes tiene entre **18 y 22 años**.  
