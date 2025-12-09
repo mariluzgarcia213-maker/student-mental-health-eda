@@ -12,6 +12,73 @@ El dataset **Student Mental Health Survey (2024)** recopila información sobre l
 
 El objetivo principal es identificar **qué factores influyen en la salud mental** de los estudiantes y analizar posibles patrones de riesgo.
 
+
+Dimensiones del Dataset y Detalles Técnicos
+
+El dataset Student Mental Health Survey contiene un total de 87 filas (estudiantes encuestados) y 21 columnas (variables medidas).
+Estas variables incluyen factores emocionales, académicos, sociales y hábitos personales, lo que permite un análisis integral del bienestar estudiantil.
+
+ Dimensiones
+
+Filas: 87 estudiantes
+
+Columnas: 21 variables
+
+Tipos de datos
+
+El dataset incluye tres tipos principales de datos:
+
+Numéricos (integer / numeric):
+Como age, depression, anxiety, academic_workload, academic_pressure, etc.
+Se usan para análisis estadísticos, rangos y visualizaciones cuantitativas.
+
+Categóricos (character):
+Como gender, average_sleep, sports_engagement, residential_status, etc.
+Estas variables representan categorías o grupos.
+
+Factores (factor):
+En R, los factores se utilizan para manejar datos categóricos de forma estructurada.
+
+ ¿Por qué se convirtieron algunas columnas de tipo character a factor en R?
+
+Durante el EDA se detectó que varias columnas estaban en formato character, pero realmente representan categorías fijas (ej.: “Male”, “Female”, “2–4 hrs”, “4–6 hrs”, “7–8 hrs”…).
+
+Transformarlas a factor es importante porque:
+
+ Permite un manejo estadístico correcto
+R trata los factor levels como categorías y no como texto libre, lo que evita errores en cálculos o gráficos.
+
+ Optimiza las visualizaciones
+Librerías como ggplot2 funcionan mejor cuando las variables categóricas son factor, especialmente en:
+
+gráficos de barras,
+
+gráficos de violín,
+
+gráficos de pastel o donut.
+
+ Permite ordenar niveles
+Por ejemplo, las horas de sueño pueden ordenarse:
+very_low_sleep < low_sleep < normal_sleep
+
+ Reduce errores en modelos posteriores
+Si se usa Machine Learning, los factores se codifican correctamente como variables categóricas.
+
+ Columna Objetivo (Target) del Proyecto
+
+Aunque este proyecto se centra en EDA + Visualización, la variable que tiene mayor importancia analítica y podría considerarse target para estudios posteriores es:
+
+ Depression
+
+Escala de 1 a 5 que mide el nivel de depresión del estudiante.
+
+Es la variable más relevante porque:
+
+está directamente relacionada con la salud mental,
+
+permite buscar factores predictivos (sueño, deporte, presión académica…),
+
+sirve para identificar patrones de riesgo en la población estudiantil.
 ---
 
 ##  2. ¿Qué se realizó en este proyecto?
