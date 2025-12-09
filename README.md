@@ -51,15 +51,18 @@ Se generaron **5 gráficos representativos** con análisis detallado (ver secci�
 El repositorio debe quedar estructurado de esta manera:
 
 ```
-📁student-mental-health-eda/
-├── Dataset.ipynb           # Notebook con todo el EDA, FEV y visualizaciones en R/Colab
-├── README.md               # Descripción del dataset, análisis y explicación del proyecto
-└── images/                 # Carpeta con las figuras exportadas desde el notebook
-    ├── donut_presion_academica.png
-    ├── boxplot_depresion_carga.png
-    ├── heatmap_presion_ansiedad.png
-    ├── barras_discriminacion_campus.png
-    └── histogramas_emocionales.png     
+📦 student-mental-health-eda
+│
+├── 📄 README.md
+├── 📄 Dataset.ipynb                 # Notebook con análisis EDA
+├── 📄 MentalHealthSurvey.csv        # Dataset original usado en Kaggle
+│
+├── 📁 images                        # Carpeta con gráficas generadas
+│     ├── donut_presion_academica.png
+│     ├── boxplot_depresion_carga.png
+│     ├── heatmap_presion_ansiedad.png
+│     ├── barras_discriminacion.png
+│     ├── histogramas_emocionales.png  
 ```
 
 ### 🔑 Importante:
