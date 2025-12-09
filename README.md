@@ -103,7 +103,7 @@ Y las celdas R con:
 
 ### **1️⃣ Gráfico DONUT – Distribución de la presión académica**
 
-**Archivo:** `images/donut_presion.png`
+![Gráfico DONUT – Presión Académica](images/donut_presion_academica.png)
 
 **Análisis:**  
 La mayor proporción de estudiantes se encuentra en niveles **alto (4)** y **muy alto (5)** de presión académica. Los niveles 1 y 2 representan una parte pequeña.  
@@ -113,7 +113,7 @@ Esto evidencia que la mayoría de los estudiantes experimentan **cargas académi
 
 ### **2️⃣ Boxplot – Depresión según carga académica**
 
-**Archivo:** `boxplot_depresion.png`
+![Boxplot Depresión vs Carga Académica](images/boxplot_depresion_carga.png)
 
 **Análisis:**  
 A medida que aumenta la carga académica, también aumentan las puntuaciones de depresión.  
@@ -123,7 +123,7 @@ La variabilidad es baja cuando la carga es mínima, pero se vuelve amplia cuando
 
 ### **3️⃣ Mapa de calor – Presión académica vs ansiedad**
 
-**Archivo:** `heatmap_presion_ansiedad.png`
+![Mapa de calor](images/heatmap_presion_ansiedad.png)
 
 **Análisis:**  
 Las combinaciones de presión **4–5** con ansiedad **4–5** son las más frecuentes (zonas más oscuras).  
@@ -131,9 +131,11 @@ Esto indica una **correlación directa entre presión académica y ansiedad**.
 
 ---
 
-### **4️⃣ Gráfico de barras – Discriminación en el campus**
+![Discriminación](images/barras_discriminacion.png)
 
 **Archivo:** `barras_discriminacion.png`
+
+![Histogramas](images/histogramas_emocionales.png)
 
 **Análisis:**  
 Aunque la mayoría reporta **no** haber sufrido discriminación, existe un grupo significativo que sí lo ha experimentado.  
