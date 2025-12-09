@@ -12,73 +12,64 @@ El dataset **Student Mental Health Survey (2024)** recopila información sobre l
 
 El objetivo principal es identificar **qué factores influyen en la salud mental** de los estudiantes y analizar posibles patrones de riesgo.
 
+## 📊 Dimensiones del Dataset y Detalles Técnicos
 
-## Dimensiones del Dataset y Detalles Técnicos
+El dataset utilizado en este proyecto contiene:
 
-El dataset Student Mental Health Survey contiene un total de 87 filas (estudiantes encuestados) y 21 columnas (variables medidas).
-Estas variables incluyen factores emocionales, académicos, sociales y hábitos personales, lo que permite un análisis integral del bienestar estudiantil.
+- **87 filas (registros de estudiantes)**
+- **21 columnas (variables)**
 
-### Dimensiones
+Esto significa que se trata de un dataset pequeño, ideal para análisis exploratorios y visualizaciones sin requerir grandes recursos computacionales.
 
-Filas: 87 estudiantes
+### 📂 Estructura general de las variables
 
-Columnas: 21 variables
+El dataset incluye diferentes tipos de variables:
 
-### Tipos de datos
+- **Numéricas:** `age`, `depression`, `anxiety`, `isolation`, `academic_pressure`, `study_satisfaction`, `academic_workload`, `future_insecurity`, `cgpa`
+- **Categóricas (factores):** `gender`, `average_sleep`, `sports_engagement`, `campus_discrimination`, `social_relationships`, etc.
 
-El dataset incluye tres tipos principales de datos:
+### 🎯 Variable objetivo (Target)
 
-Numéricos (integer / numeric):
-Como age, depression, anxiety, academic_workload, academic_pressure, etc.
-Se usan para análisis estadísticos, rangos y visualizaciones cuantitativas.
+Para este análisis, la variable objetivo seleccionada es:
 
-Categóricos (character):
-Como gender, average_sleep, sports_engagement, residential_status, etc.
-Estas variables representan categorías o grupos.
+- **`depression`** (escala de 1 a 5)
 
-Factores (factor):
-En R, los factores se utilizan para manejar datos categóricos de forma estructurada.
+Esta columna es fundamental porque permite estudiar qué variables se asocian con niveles altos o bajos de depresión en estudiantes universitarios.
 
- ¿Por qué se convirtieron algunas columnas de tipo character a factor en R?
+También se creó una variable derivada:
 
-Durante el EDA se detectó que varias columnas estaban en formato character, pero realmente representan categorías fijas (ej.: “Male”, “Female”, “2–4 hrs”, “4–6 hrs”, “7–8 hrs”…).
+- **`high_depression`** → clasifica depresión en:  
+  - `"high"` si el valor es **4 o 5**  
+  - `"low_medium"` si está entre **1 y 3**
 
-Transformarlas a factor es importante porque:
+Esto facilita comparaciones y modelos posteriores.
 
- Permite un manejo estadístico correcto
-R trata los factor levels como categorías y no como texto libre, lo que evita errores en cálculos o gráficos.
+---
 
- Optimiza las visualizaciones
-Librerías como ggplot2 funcionan mejor cuando las variables categóricas son factor, especialmente en:
+## 🔧 Conversión de variables *character* a *factor*
 
-gráficos de barras,
+Al cargar el dataset en R, varias columnas aparecían como tipo **character**, por ejemplo:
 
-gráficos de violín,
+- `gender`  
+- `average_sleep`  
+- `sports_engagement`  
+- `campus_discrimination`
 
-gráficos de pastel o donut.
+Estas variables no representan texto libre, sino **categorías cerradas**.
 
- Permite ordenar niveles
-Por ejemplo, las horas de sueño pueden ordenarse:
-very_low_sleep < low_sleep < normal_sleep
+Por eso se convirtieron a **factor**, lo cual:
 
- Reduce errores en modelos posteriores
-Si se usa Machine Learning, los factores se codifican correctamente como variables categóricas.
+- ✔ Mejora el rendimiento de R en análisis estadístico  
+- ✔ Permite generar tablas de frecuencia correctamente  
+- ✔ Facilita el uso de `ggplot2` para graficar variables categóricas  
+- ✔ Ayuda a identificar el número de niveles (categorías únicas)
 
- Columna Objetivo (Target) del Proyecto
+Ejemplo de conversión realizada en el análisis:
 
-Aunque este proyecto se centra en EDA + Visualización, la variable que tiene mayor importancia analítica y podría considerarse target para estudios posteriores es:
+```r
+char_cols <- sapply(df, is.character)
+df[char_cols] <- lapply(df[char_cols], as.factor)
 
- Depression
-
-Escala de 1 a 5 que mide el nivel de depresión del estudiante.
-
-Es la variable más relevante porque:
-
-está directamente relacionada con la salud mental,
-
-permite buscar factores predictivos (sueño, deporte, presión académica…),
-
-sirve para identificar patrones de riesgo en la población estudiantil.
 ---
 
 ##  2. ¿Qué se realizó en este proyecto?
