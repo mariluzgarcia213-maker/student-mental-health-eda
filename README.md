@@ -12,7 +12,7 @@ El dataset **Student Mental Health Survey (2024)** recopila información sobre l
 
 El objetivo principal es identificar **qué factores influyen en la salud mental** de los estudiantes y analizar posibles patrones de riesgo.
 
-## 📊 Dimensiones del Dataset y Detalles Técnicos
+##  Dimensiones del Dataset y Detalles Técnicos
 
 El dataset utilizado en este proyecto contiene:
 
@@ -21,14 +21,14 @@ El dataset utilizado en este proyecto contiene:
 
 Esto significa que se trata de un dataset pequeño, ideal para análisis exploratorios y visualizaciones sin requerir grandes recursos computacionales.
 
-### 📂 Estructura general de las variables
+###  Estructura general de las variables
 
 El dataset incluye diferentes tipos de variables:
 
 - **Numéricas:** `age`, `depression`, `anxiety`, `isolation`, `academic_pressure`, `study_satisfaction`, `academic_workload`, `future_insecurity`, `cgpa`
 - **Categóricas (factores):** `gender`, `average_sleep`, `sports_engagement`, `campus_discrimination`, `social_relationships`, etc.
 
-### 🎯 Variable objetivo (Target)
+###  Variable objetivo (Target)
 
 Para este análisis, la variable objetivo seleccionada es:
 
@@ -46,7 +46,7 @@ Esto facilita comparaciones y modelos posteriores.
 
 ---
 
-## 🔧 Conversión de variables *character* a *factor*
+##  Conversión de variables *character* a *factor*
 
 Al cargar el dataset en R, varias columnas aparecían como tipo **character**, por ejemplo:
 
