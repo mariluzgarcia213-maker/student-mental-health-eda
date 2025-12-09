@@ -103,7 +103,7 @@ Y las celdas R con:
 
 ### **1️⃣ Gráfico DONUT – Distribución de la presión académica**
 
-**Archivo:** `donut_presion.png`
+**Archivo:** `images/donut_presion.png`
 
 **Análisis:**  
 La mayor proporción de estudiantes se encuentra en niveles **alto (4)** y **muy alto (5)** de presión académica. Los niveles 1 y 2 representan una parte pequeña.  
