@@ -13,18 +13,18 @@ El dataset **Student Mental Health Survey (2024)** recopila información sobre l
 El objetivo principal es identificar **qué factores influyen en la salud mental** de los estudiantes y analizar posibles patrones de riesgo.
 
 
-Dimensiones del Dataset y Detalles Técnicos
+## Dimensiones del Dataset y Detalles Técnicos
 
 El dataset Student Mental Health Survey contiene un total de 87 filas (estudiantes encuestados) y 21 columnas (variables medidas).
 Estas variables incluyen factores emocionales, académicos, sociales y hábitos personales, lo que permite un análisis integral del bienestar estudiantil.
 
- Dimensiones
+### Dimensiones
 
 Filas: 87 estudiantes
 
 Columnas: 21 variables
 
-Tipos de datos
+### Tipos de datos
 
 El dataset incluye tres tipos principales de datos:
 
