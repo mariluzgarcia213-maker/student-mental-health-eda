@@ -198,7 +198,7 @@ Aunque la mayoría no reporta discriminación, existe un grupo significativo que
 
 ### 5. Histogramas – Edad, ansiedad y depresión
 
-![Histogramas](images/histogramas_emocionales.png)
+![Histogramas](images/histogramas_emocionaless.png)
 
 **Análisis:**  
 - Predominan estudiantes entre **18 y 22 años**.  
