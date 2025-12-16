@@ -206,7 +206,7 @@ Aunque la mayoría no reporta discriminación, existe un grupo significativo que
 
 ---
 
-## 5. Matriz de correlación entre variables académicas y emocionales
+## 6. Matriz de correlación entre variables académicas y emocionales
 
 ![Matriz de correlación](images/matriz_correlacion.png)
 
