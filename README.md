@@ -95,7 +95,7 @@ Se crearon nuevas variables útiles para análisis:
 - Eliminación de columnas irrelevantes para salud mental  
 
 ###  Visualizaciones  
-Se generaron **5 gráficos representativos** con análisis detallado (ver sección 4).
+- Generación de **gráficos clave** para analizar relaciones entre variables académicas, emocionales y sociales.
 
 ---
 
@@ -115,7 +115,11 @@ El repositorio debe quedar estructurado de esta manera:
 │     ├── boxplot_depresion_carga.png
 │     ├── heatmap_presion_ansiedad.png
 │     ├── barras_discriminacion.png
-│     ├── histogramas_emocionales.png  
+│     ├── histogramas_emocionales.png
+│     ├── matriz_correlacion.png
+
+
+
 ```
 
 ### Importante:
@@ -155,74 +159,78 @@ Y las celdas R con:
 
 ##  5. Gráficas más representativas (con análisis)
 
-### **1️ Gráfico DONUT – Distribución de la presión académica**
+### 1. Gráfico DONUT – Distribución de la presión académica
 
-![Gráfico DONUT – Presión Académica](images/donut_presion_academica.png)
+![Presión académica](images/donut_presion_academica.png)
 
 **Análisis:**  
-La mayor proporción de estudiantes se encuentra en niveles **alto (4)** y **muy alto (5)** de presión académica. Los niveles 1 y 2 representan una parte pequeña.  
-Esto evidencia que la mayoría de los estudiantes experimentan **cargas académicas elevadas**.
+La mayoría de los estudiantes se concentra en niveles **altos (4–5)** de presión académica, lo que evidencia un entorno académico exigente.
 
 ---
 
-### **2️ Boxplot – Depresión según carga académica**
+### 2. Boxplot – Depresión según carga académica
 
-![Boxplot Depresión vs Carga Académica](images/boxplot_depresion_carga.png)
+![Depresión vs carga académica](images/boxplot_depresion_carga.png)
 
 **Análisis:**  
-A medida que aumenta la carga académica, también aumentan las puntuaciones de depresión.  
-La variabilidad es baja cuando la carga es mínima, pero se vuelve amplia cuando la carga es alta, lo que indica **inestabilidad emocional asociada a exigencias académicas fuertes**.
+A mayor carga académica, mayor dispersión y niveles más altos de depresión.  
+Esto sugiere que la exigencia académica está asociada con mayor inestabilidad emocional.
 
 ---
 
-### **3️  Mapa de calor – Presión académica vs ansiedad**
+### 3. Mapa de calor – Presión académica vs ansiedad
 
-![Mapa de calor](images/heatmap_presion_ansiedadd.png)
+![Heatmap presión vs ansiedad](images/heatmap_presion_ansiedad.png)
 
 **Análisis:**  
-Las combinaciones de presión **4–5** con ansiedad **4–5** son las más frecuentes (zonas más oscuras).  
-Esto indica una **correlación directa entre presión académica y ansiedad**.
+Las combinaciones de presión **4–5** con ansiedad **4–5** son las más frecuentes, indicando una relación directa entre ambas variables.
 
 ---
-### **4 Grafico de Barras – Discriminación**
 
-**Archivo:** `barras_discriminacion.png`
+### 4. Gráfico de barras – Discriminación en el campus
 
 ![Discriminación](images/barras_discriminacion.png)
 
-
 **Análisis:**  
-Aunque la mayoría reporta **no** haber sufrido discriminación, existe un grupo significativo que sí lo ha experimentado.  
-Este tipo de experiencias están asociadas con mayor ansiedad y menor satisfacción académica.
+Aunque la mayoría no reporta discriminación, existe un grupo significativo que sí la experimenta, lo cual puede impactar negativamente el bienestar emocional.
 
 ---
 
-### **5 Histogramas de edad, ansiedad y depresión**
+### 5. Histogramas – Edad, ansiedad y depresión
 
-**Archivo:** `histogramas.png`
 ![Histogramas](images/histogramas_emocionales.png)
 
+**Análisis:**  
+- Predominan estudiantes entre **18 y 22 años**.  
+- Ansiedad y depresión muestran concentraciones en niveles **medios–altos**, reflejando un estado emocional vulnerable en parte de la población.
+
+---
+
+## 5. Matriz de correlación entre variables académicas y emocionales
+
+![Matriz de correlación](images/matriz_correlacion.png)
 
 **Análisis:**  
-- La mayoría de los estudiantes tiene entre **18 y 22 años**.  
-- La ansiedad se distribuye de manera amplia, con picos en niveles 3–4.  
-- La depresión muestra un patrón similar, sugiriendo una tendencia generalizada a **niveles moderados-altos de estrés emocional**.
+La matriz de correlación permite evaluar la **intensidad y dirección** de las relaciones entre variables numéricas.
+
+- Existe una **correlación fuerte y positiva** entre **depresión y ansiedad**, indicando que suelen aumentar conjuntamente.
+- El **aislamiento social** presenta una correlación alta tanto con depresión como con ansiedad.
+- La **presión y la carga académica** muestran correlaciones **moderadas** con las variables emocionales, actuando como factores que agravan el malestar psicológico, aunque no lo explican por sí solos.
+
+En conjunto, la matriz evidencia que los factores emocionales están más estrechamente relacionados entre sí, mientras que los factores académicos funcionan como detonantes o amplificadores.
 
 ---
 
-##  6. Conclusiones principales
+## 6. Conclusiones principales
 
-- La presión y la carga académica muestran **relación directa** con ansiedad y depresión.  
-- El sueño insuficiente y la falta de deporte agravan los factores de riesgo emocional.  
-- La discriminación, aunque menos frecuente, tiene un fuerte impacto negativo.  
-- Las relaciones sociales funcionan como **factor protector**, reduciendo los niveles de ansiedad.  
-
-Este análisis permite identificar patrones clave para intervenciones y estrategias de bienestar estudiantil.
+- La presión y la carga académica están asociadas con mayores niveles de ansiedad y depresión.
+- El aislamiento social intensifica el malestar emocional.
+- La discriminación, aunque menos frecuente, tiene un impacto significativo.
+- Las variables emocionales presentan relaciones más fuertes entre sí que con los factores académicos.
 
 ---
 
-##  7. Autor
+## 7. Autor
 
 Proyecto desarrollado por **Mariluz García Vera**  
-EDA realizado con **R + Python (rpy2)** en Google Colab.
-
+Análisis exploratorio realizado con **R + Python (rpy2)** en Google Colab.
