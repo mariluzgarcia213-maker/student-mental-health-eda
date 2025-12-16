@@ -177,7 +177,7 @@ La variabilidad es baja cuando la carga es mínima, pero se vuelve amplia cuando
 
 ### **3️  Mapa de calor – Presión académica vs ansiedad**
 
-![Mapa de calor](images/heatmap_presion_ansiedad.png)
+![Mapa de calor](images/heatmap_presion_ansiedadd.png)
 
 **Análisis:**  
 Las combinaciones de presión **4–5** con ansiedad **4–5** son las más frecuentes (zonas más oscuras).  
